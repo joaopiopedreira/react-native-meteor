@@ -258,7 +258,7 @@ module.exports = {
         let existing = false;
         for (const i in Data.subscriptions) {
             const sub = Data.subscriptions[i];
-            if (sub.inactive && sub.name === name && EJSON.equals(sub.params, params)) { existing = sub; }
+            if (sub.name === name && EJSON.equals(sub.params, params)) { existing = sub; }
         }
 
         let id;
